@@ -1,0 +1,17 @@
+<% | String $installation_loc, String $inst_name, String $inst_uid, String $inst_uname, String $inst_group, String $inst_home | %>
+LIC_AGREEMENT = ACCEPT
+PROD = CLIENT
+FILE = <%=$installation_loc%>
+
+INSTALL_TYPE = TYPICAL
+INSTANCE = <%=$inst_name%>
+<%=$inst_name%>.TYPE       = client
+
+<%=$inst_name%>.NAME = <%=$inst_uname%>
+<%=$inst_name%>.UID = <%=$inst_uid%>
+<%=$inst_name%>.GROUP_NAME = <%=$inst_group%>
+<%=$inst_name%>.HOME_DIRECTORY = <%=$inst_home%>
+<%=$inst_name%>.AUTOSTART = NO
+
+LANG = EN
+

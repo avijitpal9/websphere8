@@ -1,0 +1,14 @@
+{
+  "name": "avijitpal9-websphere8",
+  "version": "0.1.0",
+  "author": "avijitpal9",
+  "summary": "Manages and configure websphere8 and wcs8 stack",
+  "license": "Apache-2.0",
+  "source": "",
+  "project_page": null,
+  "issues_url": null,
+  "dependencies": [
+    {"name":"puppetlabs-stdlib","version_requirement":">= 1.0.0"}
+  ],
+  "data_provider": null
+}

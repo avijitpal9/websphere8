@@ -1,0 +1,8 @@
+<% | String $mtn_pkgid, String $prd_loc | %>
+-OPT silentInstallLicenseAcceptance="false"
+-W maintenance.package="<%=$mtn_pkgid%>"
+-OPT disableNonBlockingPrereqChecking="false"
+-OPT rootUserHasRunSlibcleanCommandSuccessfully="false"
+-W product.location="<%=$prd_loc%>"
+-W update.exportearTimeout=240
+-W update.type="install"

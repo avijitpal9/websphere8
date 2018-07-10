@@ -1,0 +1,6 @@
+<% |  String $live_db, String $live_dbhost, String $live_dbport, String $auth_db, String $auth_dbhost, String $auth_dbport | %>
+#! /bin/bash
+db2 catalog tcpip node authdb remote <%=$auth_dbhost%> server <%=$auth_dbport%>
+db2 catalog database <%=$auth_db%> as authdb at node authdb
+db2 catalog tcpip node livedb remote <%=$auth_dbhost%> server <%=$auth_dbport%>
+db2 catalog database <%=$live_db%> as livedb at node livedb

@@ -1,0 +1,6 @@
+<% | String $inst_loc | %>
+-OPT silentInstallLicenseAcceptance="true"
+-OPT allowNonRootSilentInstall="true"
+-OPT disableOSPrereqChecking="false"
+-OPT disableEarlyPrereqChecking="false"
+-OPT installLocation="<%=$inst_loc%>"

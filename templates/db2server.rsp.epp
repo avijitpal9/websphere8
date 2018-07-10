@@ -1,0 +1,28 @@
+<% | String $installation_loc, String $das_uname, String $das_group, String $das_home, String $das_passwd,String $inst_name, String $inst_uid, String $inst_uname, String $inst_group, String $inst_home, String $inst_port, String $inst_fc_port, String $fncd_uname, String $fncd_uid, String $fncd_group, String $fncd_home | --%>
+LIC_AGREEMENT      = ACCEPT
+PROD               = DB2_SERVER_EDITION
+FILE               = <%=$installation_loc%>
+INSTALL_TYPE       = TYPICAL
+DAS_CONTACT_LIST   = LOCAL
+DAS_USERNAME       = <%=$das_uname%>
+DAS_GROUP_NAME     = <%=$das_group%>
+DAS_HOME_DIRECTORY = <%=$das_home%>
+DAS_PASSWORD       = <%=$das_passwd%>
+INSTANCE           = <%=$inst_name%>
+<%=$inst_name%>.TYPE                  = ese
+<%=$inst_name%>.NAME                  = <%=$inst_uname%>
+<%=$inst_name%>.UID                   = <%=$inst_uid%>
+<%=$inst_name%>.GROUP_NAME            = <%=$inst_group%>
+<%=$inst_name%>.HOME_DIRECTORY        = <%=$inst_home%>
+<%=$inst_name%>.AUTOSTART             = YES
+<%=$inst_name%>.SVCENAME              = db2c_<%=$inst_name%>
+<%=$inst_name%>.PORT_NUMBER           = <%=$inst_port%>
+<%=$inst_name%>.FCM_PORT_NUMBER       = <%=$inst_fc_port%>
+<%=$inst_name%>.MAX_LOGICAL_NODES     = 4
+<%=$inst_name%>.CONFIGURE_TEXT_SEARCH = NO
+<%=$inst_name%>.FENCED_USERNAME       = <%=$fncd_uname%>
+<%=$inst_name%>.FENCED_UID            = <%=$fncd_uid%>
+<%=$inst_name%>.FENCED_GROUP_NAME     = <%=$fncd_group%>
+<%=$inst_name%>.FENCED_HOME_DIRECTORY = <%=$fncd_home%>
+LANG = EN
+
